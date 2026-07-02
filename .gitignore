@@ -1,0 +1,7 @@
+# OS / editor
+.DS_Store
+*.swp
+*:Zone.Identifier
+
+# scratch files this skill may write during a run
+/tmp/
