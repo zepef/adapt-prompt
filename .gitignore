@@ -5,3 +5,6 @@
 
 # scratch files this skill may write during a run
 /tmp/
+
+# EnterWorktree working directories (nested repo, must never be committed)
+.claude/
