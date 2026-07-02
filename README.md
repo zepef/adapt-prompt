@@ -1,6 +1,6 @@
 # adapt-prompt
 
-![adapt-prompt — an Anthropic prompt optimizer for Claude](adapt-prompt.png)
+![adapt-prompt — an Anthropic prompt optimizer for Claude](adapt-prompt-en.png)
 
 🇫🇷 [Lire en français](README.fr.md)
 
