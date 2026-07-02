@@ -1,5 +1,9 @@
 # adapt-prompt
 
+![adapt-prompt — an Anthropic prompt optimizer for Claude](adapt-prompt.png)
+
+🇫🇷 [Lire en français](README.fr.md)
+
 **A Claude Code skill that rewrites a draft prompt for whichever Claude model is currently active in the session.**
 
 > Prompt engineering advice for Claude changed shape with the Sonnet 5 / Opus 4.8 / Fable 5 / Mythos 5 generation: each family now has genuinely different defaults — thinking-on-by-default vs. off, effort floors, literal instruction-following, subagent-spawning behavior, even safety classifiers that can be tripped by innocuous-looking instructions. A prompt tuned for one model is not automatically well-tuned for another, and Anthropic ships the differences as prose documentation, not as an API you can query. This skill turns that documentation into something a prompt gets checked against automatically, every time.
