@@ -70,6 +70,8 @@ Walk `RAW_PROMPT` against the general techniques in `references/general.md` and 
 
 **Family = `fable`, non-negotiable check:** scan for and remove or rephrase any instruction resembling "explain your reasoning" / "show your thinking" / "reproduce your internal reasoning as response text". These risk tripping the `reasoning_extraction` safety classifier and triggering a refusal-driven fallback to Opus 4.8 — at cost, which directly undermines the point of this skill. Replace with outcome-oriented phrasing instead (e.g. "summarize your conclusions and the key evidence").
 
+**Family = `fable`, structural check:** verify the draft against the 4-component skeleton in `references/fable.md` — Context carrying the *why* (larger task, who it's for, what the output enables), Request in one clear sentence, Output format, Constraints. Flag any component that's missing without reason, and strip any prescribed *how* (step-by-step method, mandated approach) — dictating the approach degrades Fable 5's output; define the outcome instead.
+
 ## 5. Two exits before rewriting
 
 **Already well-optimized:** if `RAW_PROMPT` already satisfies the great majority of applicable techniques, say so explicitly and stop short of a full rewrite. At most surface 1-2 genuinely high-value tweaks if truly present. Never manufacture cosmetic diffs to look like work was done. Use the short output format in §9.
